@@ -2,7 +2,7 @@
 
 ## Interactive demo
 
-▶️▶️▶️ [Launch the Qualtrics demo](https://duke.qualtrics.com/jfe/form/SV_8BKdwvqVhjC9aoS) ◀️◀️◀️<br>
+▶️▶️▶️ [Launch the Qualtrics demo](https://duke.qualtrics.com/jfe/form/SV_6gJYJSl6u1RUDWe) ◀️◀️◀️<br>
 *Ctrl+click (Windows) or ⌘+click (Mac) to open in a new tab.*
 
 This survey demonstrates the proposed apparatus for chat-based AI support during the Mars survival item-ranking task used in Experiments 1 and 2. On the first page, you can select treatment conditions to explore the AI assistant’s different interaction policies. During the chat, you can track the AI assistant’s hidden stance in your browser’s Console. Instructions for accessing the Console appear alongside the chat interface.
