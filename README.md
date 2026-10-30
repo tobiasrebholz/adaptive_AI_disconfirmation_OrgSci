@@ -1,11 +1,35 @@
 # Adaptive AI-Assisted Disconfirmation
 
+An experimental apparatus implemented in Qualtrics for studying reciprocal judgment updating during open-ended human–AI conversations.
+
+## Repository contents
+
+- **Qualtrics code for Experiments 1 and 2**, documenting the survey and parallel ranking and chat implementation.
+- **System prompts** governing hidden recommendation updating, substantive stance, interpersonal tone, and fixed or adaptive persistence.
+- **Access to the interactive prototype** through the demo link below.
+
+These materials document the existing implementation and provide a starting point for adapting the apparatus to other structured judgment tasks.
+
 ## Interactive demo
 
-▶️▶️▶️ [Launch the Qualtrics demo](https://duke.qualtrics.com/jfe/form/SV_6gJYJSl6u1RUDWe) ◀️◀️◀️<br>
+▶️▶️▶️ **[Launch the Qualtrics demo](https://duke.qualtrics.com/jfe/form/SV_6gJYJSl6u1RUDWe)** ◀️◀️◀️<br>
 *Ctrl+click (Windows) or ⌘+click (Mac) to open in a new tab.*
 
-This survey demonstrates the proposed apparatus for chat-based AI support during the Mars survival item-ranking task used in Experiments 1 and 2. On the first page, you can select treatment conditions to explore the AI assistant’s different interaction policies. During the chat, you can track the AI assistant’s hidden stance in your browser’s Console. Instructions for accessing the Console appear alongside the chat interface.
+This shortened survey demonstrates the apparatus using the Mars survival item-ranking task from Experiments 1 and 2. On the first page, you can select treatment conditions to explore the AI assistant’s different interaction policies. Then, you will be asked to choose a survival strategy and rank a set of 15 salvaged items with chat-based support from an AI assistant.
+
+The demo includes instructions for inspecting the assistant’s hidden recommendations and user assessments alongside the visible conversation. The recommended strategy, item ranking, and—under adaptive persistence—estimated persuasion probability are logged as structured JSON objects in the browser’s Console. To inspect these outputs, open Developer Tools using **Ctrl+Shift+I** (Windows) or **⌘+Option+I** (Mac), then select **Console** and expand the logged objects. Additional instructions appear alongside the chat interface.
+
+## How the apparatus works
+
+The apparatus combines three components:
+
+1. **Repeated structured judgments.** Participants can revise their item rankings throughout the conversation, providing a process measure of judgment updating.
+
+2. **Parallel hidden reasoning traces.** Before each visible reply, the assistant generates its current recommended strategy and item ranking in a separate, non-user-facing reasoning trace. Under adaptive persistence, it also estimates the likelihood that the user will accept its opposing strategy.
+
+3. **Experimentally controlled interaction policies.** System prompts govern substantive agreement or disagreement, interpersonal tone, and persistence. Fixed persistence uses conversational turn counts to govern when concession becomes permissible; adaptive persistence uses thresholds applied to the assistant’s persuasion probability estimates.
+
+Pairing participants’ evolving judgments with the assistant’s elicited recommendations makes it possible to distinguish user updating, AI accommodation, and movement by both parties. Researchers can investigate these trajectories without first reconstructing task positions from conversational traces.
 
 # LICENSE
 
