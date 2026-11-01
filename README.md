@@ -1,6 +1,6 @@
 # Adaptive AI-Assisted Disconfirmation
 
-An experimental apparatus implemented in Qualtrics for studying reciprocal judgment updating during open-ended human–AI conversations.
+A reusable experimental infrastructure implemented in Qualtrics for studying reciprocal judgment updating during open-ended human–AI conversations.
 
 ## Repository contents
 
@@ -8,20 +8,20 @@ An experimental apparatus implemented in Qualtrics for studying reciprocal judgm
 - **System prompts** governing hidden recommendation updating, substantive stance, interpersonal tone, and fixed or adaptive persistence.
 - **Access to the interactive prototype** through the demo link below.
 
-These materials document the existing implementation and provide a starting point for adapting the apparatus to other structured judgment tasks.
+These materials document the existing implementation and provide a starting point for adapting the experimental infrastructure to other structured judgment tasks.
 
 ## Interactive demo
 
 ▶️▶️▶️ **[Launch the Qualtrics demo](https://duke.qualtrics.com/jfe/form/SV_6gJYJSl6u1RUDWe)** ◀️◀️◀️<br>
-*Ctrl+click (Windows) or ⌘+click (Mac) to open in a new tab.*
+[*Ctrl+click* (Windows) or *⌘+click* (Mac) to open in a new tab]
 
-This shortened survey demonstrates the apparatus using the Mars survival item-ranking task from Experiments 1 and 2. On the first page, you can select treatment conditions to explore the AI assistant’s different interaction policies. Then, you will be asked to choose a survival strategy and rank a set of 15 salvaged items with chat-based support from an AI assistant.
+This shortened survey demonstrates the infrastructure using the Mars survival task from Experiments 1 and 2. On the first page, you can select treatment conditions to explore the AI assistant’s different interaction policies. Then, you will be asked to choose a survival strategy and rank a set of 15 salvaged items with chat-based support from an AI assistant.
 
-The demo includes instructions for inspecting the assistant’s hidden recommendations and user assessments alongside the visible conversation. The recommended strategy, item ranking, and—under adaptive persistence—estimated persuasion probability are logged as structured JSON objects in the browser’s Console. To inspect these outputs, open Developer Tools using **Ctrl+Shift+I** (Windows) or **⌘+Option+I** (Mac), then select **Console** and expand the logged objects. Additional instructions appear alongside the chat interface.
+The demo also includes instructions for inspecting the AI assistant’s hidden reasoning traces alongside the visible conversation.
 
-## How the apparatus works
+## How the experimental infrastructure works
 
-The apparatus combines three components:
+The infrastructure combines three components:
 
 1. **Repeated structured judgments.** Participants can revise their item rankings throughout the conversation, providing a process measure of judgment updating.
 
